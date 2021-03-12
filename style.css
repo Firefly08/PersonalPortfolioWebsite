@@ -725,8 +725,8 @@ footer {
     }
 
     .contact__map {
-        height: 400px;
-        width: 400px;
+        height: 340px;
+        width: 340px;
     }
 
     .row p {
@@ -788,7 +788,7 @@ footer {
     }
 
     .main-nav li a {
-        padding: 15px 5px;
+        padding: 15px 2px;
     }
 
     .form__row {
