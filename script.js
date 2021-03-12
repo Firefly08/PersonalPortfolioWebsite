@@ -1,7 +1,7 @@
 function readmore1() {
     var x = document.getElementById("more1");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -10,7 +10,7 @@ function readmore1() {
 function readmore2() {
     var x = document.getElementById("more2");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -19,7 +19,7 @@ function readmore2() {
 function readmore3() {
     var x = document.getElementById("more3");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
