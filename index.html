@@ -10,17 +10,18 @@
         type="text/css" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <script src="https://kit.fontawesome.com/dc4cfd0094.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="main-nav">
             <div class="main-nav__container">
-                <ul>
-                    <li><img src="./img/logo.png" alt="Logo"></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="menu" id="menu">
+                    <li><a class="menu-link" href="#banner">Home</a></li>
+                    <li><a class="menu-link" href="#skills">Skills</a></li>
+                    <li><a class="menu-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="menu-link" href="#resume">Resume</a></li>
+                    <li><a class="menu-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,118 +40,128 @@
             </div>
         </section>
 
-        <section id="services">
+        <section id="skills">
             <div class="container">
                 <div class="heading">
                     <div class="container">
-                        <h2 class="heading__title">My <span>skils</span></h2>
+                        <h2 class="heading__title">My <span>skills</span></h2>
                     </div>
                 </div>
-                <div class="services__container">
-                    <div class="service">
-                        <i class="service__icon fas fa-volume-up"></i>
-                        <h3 class="service__name">SOUND SYSTEM</h3>
+                <div class="skills__container">
+                    <div class="skill">
+                        <i class="skill__icon fab fa-html5"></i>
+                        <h3 class="skill__name">HTML5</h3>
                         <p>The difference is between okay sound quality
                             and amazing sound...</p>
                     </div>
-                    <div class="service">
-                        <i class="service__icon fas fa-car"></i>
-                        <h3 class="service__name">CAR WRAPPING</h3>
-                        <p>We have a highly experienced team of wrappers, pick a colour and we will do the rest!</p>
+                    <div class="skill">
+                        <i class="skill__icon fab fa-css3-alt"></i>
+                        <h3 class="skill__name">CSS3</h3>
+                        <p>We have a highly experienced resume of wrappers, pick a colour and we will do the rest!</p>
                     </div>
-                    <div class="service">
-                        <i class="service__icon fas fa-tools"></i>
-                        <h3 class="service__name">SERVICE</h3>
+                    <div class="skill">
+                        <i class="skill__icon fab fa-js-square"></i>
+                        <h3 class="skill__name">JAVASCRIPT</h3>
                         <p>You won't need to pay anything until the work has been completed...</p>
                     </div>
-                    <div class="service">
-                        <i class="service__icon fas fa-tachometer-alt"></i>
-                        <h3 class="service__name">TUNING</h3>
+                    <div class="skill">
+                        <i class="skill__icon fab fa-python"></i>
+                        <h3 class="skill__name">PYTHON</h3>
+                        <p>Make your automotive dreams come true with tuning kits, tuning parts...</p>
+                    </div>
+                    <div class="skill">
+                        <i class="skill__icon fab fa-github"></i>
+                        <h3 class="skill__name">GitHub</h3>
+                        <p>You won't need to pay anything until the work has been completed...</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./img/visual-studio.png" alt=""><br>
+                        <h3 class="skill__name">Visual Studio</h3>
                         <p>Make your automotive dreams come true with tuning kits, tuning parts...</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="gallery">
+        <section id="portfolio">
             <div class="heading">
                 <div class="container">
                     <h2 class="heading__title">My <span>portfolio</span></h2>
                 </div>
             </div>
-            <div class="gallery__container">
-                <figure class="gallery__picture">
-                    <img src="./img/tuning-01.jpg" alt="Gallery Picture 1" class="gallery__img">
+            <div class="portfolio__container">
+                <figure class="portfolio__picture">
+                    <img src="./img/tuning-01.jpg" alt="portfolio Picture 1" class="portfolio__img">
                 </figure>
-                <figure class="gallery__picture">
-                    <img src="./img/tuning-02.jpg" alt="Gallery Picture 2" class="gallery__img">
+                <figure class="portfolio__picture">
+                    <img src="./img/tuning-02.jpg" alt="portfolio Picture 2" class="portfolio__img">
                 </figure>
-                <figure class="gallery__picture">
-                    <img src="./img/tuning-03.jpg" alt="Gallery Picture 3" class="gallery__img">
+                <figure class="portfolio__picture">
+                    <img src="./img/tuning-03.jpg" alt="portfolio Picture 3" class="portfolio__img">
                 </figure>
-                <figure class="gallery__picture">
-                    <img src="./img/tuning-04.jpg" alt="Gallery Picture 4" class="gallery__img">
+                <figure class="portfolio__picture">
+                    <img src="./img/tuning-04.jpg" alt="portfolio Picture 4" class="portfolio__img">
                 </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-05.jpg" alt="Gallery Picture 5" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-05.jpg" alt="portfolio Picture 5" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-06.jpg" alt="Gallery Picture 6" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-06.jpg" alt="portfolio Picture 6" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-07.jpg" alt="Gallery Picture 7" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-07.jpg" alt="portfolio Picture 7" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-08.jpg" alt="Gallery Picture 8" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-08.jpg" alt="portfolio Picture 8" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-09.jpg" alt="Gallery Picture 9" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-09.jpg" alt="portfolio Picture 9" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-10.jpg" alt="Gallery Picture 10" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-10.jpg" alt="portfolio Picture 10" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-11.jpg" alt="Gallery Picture 11" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-11.jpg" alt="portfolio Picture 11" class="portfolio__img">
                  </figure>
-                 <figure class="gallery__picture">
-                     <img src="./img/tuning-12.jpg" alt="Gallery Picture 12" class="gallery__img">
+                 <figure class="portfolio__picture">
+                     <img src="./img/tuning-12.jpg" alt="portfolio Picture 12" class="portfolio__img">
                  </figure>
             </div>
         </section>
 
-        <section id="team">
+        <section id="resume">
             <div class="container">
                 <div class="heading">
-                    <h2 class="heading__title">our team leaders</h2>
+                    <h2 class="heading__title">My <span>resume</span></h2>
                     <p class="heading__description">We don’t oﬀer perks to make people happy. Our work does that.</p>
                 </div>
 
-                <div class="team__container">
-                    <div class="team__member">
-                        <figure class="team__photo">
-                            <img src="./img/team-3.jpg" alt="Founder Working Yoga" class="team__img">
+                <div class="resume__container">
+                    <div class="resume__member">
+                        <figure class="resume__photo">
+                            <img src="./img/resume-3.jpg" alt="Founder Working Yoga" class="resume__img">
                         </figure>
-                        <div class="team__detail">
-                            <h3 class="team__name">Hugo Silva</h3>
-                            <p class="team__role">C.E.O. - Founder and Principal Investor</p>
+                        <div class="resume__detail">
+                            <h3 class="resume__name">Hugo Silva</h3>
+                            <p class="resume__role">C.E.O. - Founder and Principal Investor</p>
                         </div>
                     </div>
-                    <div class="team__member">
-                        <figure class="team__photo">
-                            <img src="./img/team-2.jpg" alt="Co-Founder working Yoga" class="team__img">
+                    <div class="resume__member">
+                        <figure class="resume__photo">
+                            <img src="./img/resume-2.jpg" alt="Co-Founder working Yoga" class="resume__img">
                         </figure>
-                        <div class="team__detail">
-                            <h3 class="team__name">Javier Bardem</h3>
-                            <p class="team__role">Mechanic - Body Tuning</p>
+                        <div class="resume__detail">
+                            <h3 class="resume__name">Javier Bardem</h3>
+                            <p class="resume__role">Mechanic - Body Tuning</p>
                         </div>
                     </div>
-                    <div class="team__member">
-                        <figure class="team__photo">
-                            <img src="./img/team-1.jpg" alt="Co-Founder working Yoga" class="team__img">
+                    <div class="resume__member">
+                        <figure class="resume__photo">
+                            <img src="./img/resume-1.jpg" alt="Co-Founder working Yoga" class="resume__img">
                         </figure>
-                        <div class="team__detail">
-                            <h3 class="team__name">John Doe</h3>
-                            <p class="team__role">Mechanic - Audio Tuning</p>
+                        <div class="resume__detail">
+                            <h3 class="resume__name">John Doe</h3>
+                            <p class="resume__role">Mechanic - Audio Tuning</p>
                         </div>
                     </div>
                 </div>
@@ -160,8 +171,8 @@
         <section id="contact">
             <div class="container">
                 <div class="heading">
-                    <h2 class="heading__title">contact us</h2>
-                    <p class="heading__description"><em>Tuning accesories & proffesional and efficient services, since
+                    <h2 class="heading__title"><span>contact</span> me</h2>
+                    <p class="heading__description"><em>Tuning accesories & proffesional and efficient skills, since
                             2002.</em></p>
                 </div>
                 <div class="contact__container">
@@ -177,7 +188,7 @@
                     <label for="email-input">Email: </label>
                     <input type="email" id="email-input">
                     <br><br>
-                    <label for="therapy-input">What services are you interested in?</label>
+                    <label for="therapy-input">What skills are you interested in?</label>
                     <br>
                     <input type="checkbox" id="audio" name="audio"><label for="audio">Audio </label>
                     <input type="checkbox" id="body" name="body"><label for="body">Body </label>
@@ -205,7 +216,7 @@
                     <p>We offer you wide selection of high quality tuning accessories: genuine leather or alcantara/suede car gaiters and boots, armrest and gear knob covers, alloy rings/surrounds, gear knobs, armrests, and much more. <br>We are also a distributor of DIY accessories like adhesives, lubricants, cleaners, 3M tapes, and other products for motorisation and household made by Technicqll.</p>
                     <img src="./img/TuningShopLogo.jpg" alt="Logo">
                     <h2>Terms & Conditions</h2>
-                    <p>We usually dispatch an items on the same or next working day after cleared payment. As a fully registered business seller we will try our best to offer you high level customer service and product support.</p><br>
+                    <p>We usually dispatch an items on the same or next working day after cleared payment. As a fully registered business seller we will try our best to offer you high level customer skill and product support.</p><br>
                     <h2>Returns</h2>
                     <p>If you are not happy with the product you have two weeks to return it to us in original condition and we will send you money back.</p>
                 </div>
@@ -225,18 +236,16 @@
     <footer>
         <div class="container">
             <div class="row">
-                <p>Copyright &copy; 2020 Company Home Page. All right reserved!</p>
+                <p>Copyright &copy; 2021 Personal Portfolio Website. All right reserved!</p>
                 <div class="center">
-                    <p>The Tuning Shop Ltd, London, United Kingdom</p>
-                    <p>Email: contact@thetuningshop.com</p>
-                    <p>Phone: 0743 453 332 090</p>
+                    <p>Horea Lazar</p>
+                    <p>Email: horearem@gmail.com</p>
+                    <p>Phone: +44 799 098 06 05</p>
                 </div>
                 <ul class="social-link">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>                    
                 </ul>
             </div>
         </div>

@@ -30,7 +30,7 @@ header {
     left: 0;
     z-index: 10;
     width: 100%;
-    position: fixed;
+    position: sticky;
 }
 
 header p {
@@ -53,9 +53,10 @@ header p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: var(--color-orange);
     text-align: right;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .main-nav ul {
@@ -68,18 +69,24 @@ header p {
     text-transform: uppercase;
     font-weight: 700;
     position: relative;
+    border: 1px solid black;
+    background-color: rgb(255 255 255);
 }
 
 .main-nav li a {
     display: block;
     overflow: hidden;
     position: relative;
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
     padding: 1.8rem 2.4rem;
     transition: all .3s ease-in-out;
 }
 
+nav .main-nav ul li.active a {
+    color: rgb(255, 0, 0);
+}
+/*
 .main-nav li a::after {
     content: '';
     width: 100%;
@@ -91,6 +98,22 @@ header p {
     transform-origin: left bottom;
     transition: all .3s ease-in-out;
     background-color: var(--color-white);
+}
+*/
+
+.menu-link {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.menu-link:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .main-nav li a:hover::after {
@@ -133,7 +156,7 @@ nav img {
 }
 
 .banner__content h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
     color: var(--color-orange);
 }
@@ -143,19 +166,21 @@ nav img {
     color: var(--color-dark-gray);
 }
 
-#services {
+#skills {
     position: relative;
     z-index: 4;
-    margin-top: 5%;
+    padding: 8rem 0 8rem 0;
 }
 
-.services__container {
+.skills__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-flow: wrap;
+    place-content: center;
 }
 
-.service {
+.skill {
     display: flex;
     flex: 0 1 30%;
     text-align: center;
@@ -165,24 +190,25 @@ nav img {
     background-color: var(--color-white);
     box-shadow: 5px 5px 5px var(--color-light-gray);
     border: 1px solid black;
+    margin: 1%;
 }
 
-.service:hover {
+.skill:hover {
     transform: scale(1.3);
     transition: all .3s ease-in-out;
 }
 
-.service__icon {
+.skill__icon {
     font-size: 3.6rem;
     margin-bottom: 3rem;
 }
 
-.service__name {
-    font-size: 2.133rem;
+.skill__name {
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 
-.service:not(:last-child) {
+.skill:not(:last-child) {
     margin-right: 2rem;
 }
 
@@ -223,23 +249,23 @@ p {
 
 .container {
     width: 100%;
-    max-width: 130rem;
+    max-width: 150rem;
     margin: 0 auto;
-    padding: 0 1.6rem;
+    /* padding: 0 1.6rem; */
 }
 
-#team {
+#resume {
     text-align: center;
-    padding: 6rem 0 0 0;
+    padding: 8rem 0 8rem 0;
 }
 
-.team__container {
+.resume__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.team__member {
+.resume__member {
     flex: 0 0 32rem;
     max-width: 32rem;
     border-radius: 9rem 9rem 0 0;
@@ -247,13 +273,13 @@ p {
     box-shadow: 0 1px 4px 2px var(--color-light-gray);
 }
 
-.team__photo:hover {
+.resume__photo:hover {
         transform: scale(1.3);
         transition: all .3s ease-in-out;
         box-shadow: 3px 3px 10px black;
 }
 
-.team__photo {
+.resume__photo {
     width: 100%;
     border-radius: 9rem;
     max-height: 45rem;
@@ -261,7 +287,7 @@ p {
     margin-bottom: 1.6rem;
 }
 
-.team__img {
+.resume__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -269,15 +295,16 @@ p {
     object-position: center top;
 }
 
-.team__img:hover {
+.resume__img:hover {
     border-radius: 0%;
 }
 
-#gallery {
-    padding: 8rem 0 0 0;
+#portfolio {
+    padding: 8rem 0 8rem 0;
+    background-image: radial-gradient(#ffffff, #d7d7d7);
 }
 
-.gallery__container {
+.portfolio__container {
     display: flex;
     flex-direction: row;
     padding: 0 7%;
@@ -285,7 +312,7 @@ p {
     justify-content: center;
 }
 
-.gallery__picture {
+.portfolio__picture {
     flex: 0 1 30%;
     width: 30%;
     position: relative;
@@ -293,24 +320,25 @@ p {
     box-shadow: 3px 3px 10px black;
 }
 
-.gallery__picture:hover .gallery__img {
+.portfolio__picture:hover .portfolio__img {
     transform: scale(1.3);
     opacity: 1;
     transition: all .3s ease-in-out;
     box-shadow: 3px 3px 10px black;
 }
 
-.gallery__img {
+.portfolio__img {
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
     object-fit: cover;
     object-position: center;
     transition: all .3s ease-in-out;
 }
 
 #contact {
-    padding: 8rem;
+    padding: 8rem 0 8rem 0;
+    background-image: radial-gradient(#ffffff, #d7d7d7);
 }
 
 .contact__form {
@@ -454,7 +482,7 @@ p {
 footer {
     color: var(--color-white);
     padding: 2rem 0;
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-orange);
 }
 
 .row {
@@ -463,45 +491,49 @@ footer {
     justify-content: space-between;
 }
 
+.fab {
+    font-size: xxx-large;
+}
+
 @media only screen and (max-width: 1024px) {
     .banner__content {
         width: 100%;
         padding-top: 5rem;
     }
 
-    .services__container {
+    .skills__container {
         flex-wrap: wrap;
     }
 
-    .service {
+    .skill {
         flex: 0 1 40%;
         margin-bottom: 2rem;
     }
 
-    .service:nth-child(2) {
+    .skill:nth-child(2) {
         margin-right: 0;
     }
 
-    .team__container {
+    .resume__container {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         flex: 0 1 350%;
     }
 
-    .team__member {
+    .resume__member {
         min-height: 55rem;
         flex: 0 0 30rem;
         max-width: 30rem;
         margin-bottom: 6%;
     }
 
-    .gallery__container {
+    .portfolio__container {
         flex-wrap: wrap;
         flex: 0 1 30%;
     }
 
-    .gallery__picture {
+    .portfolio__picture {
         flex: 0 1 30%;
         margin-bottom: 20px;
     }
@@ -527,12 +559,12 @@ footer {
         width: 85%;
     }
 
-    .gallery__picture {
+    .portfolio__picture {
         flex: 0 1 47%;
         margin-bottom: 20px;
     }
 
-    .gallery__container {
+    .portfolio__container {
         flex-wrap: wrap;
         padding: 0 5%;
     }
@@ -573,40 +605,40 @@ footer {
         padding-top: 3rem;
     }
 
-    .service {
+    .skill {
         flex: 0 1 85%;
     }
 
-    #team {
+    #resume {
         padding-top: 0;
     }
 
-    .team__member {
+    .resume__member {
         min-height: 60rem;
         max-width: 350px;
         flex: 0 0 40rem;
     }
 
-    .team__photo {
+    .resume__photo {
         max-height: 60rem;
     }
 
-    #gallery {
+    #portfolio {
         padding-top: 10%;
     }
 
-    .gallery__container {
+    .portfolio__container {
         flex-wrap: wrap;
         padding: 0 5%;
     }
 
-    .gallery__picture {
+    .portfolio__picture {
         flex: 0 1 100%;
         margin-bottom: 20px;
         height: 30rem;
     }
 
-    .service:not(:last-child) {
+    .skill:not(:last-child) {
         margin-right: 0;
     }
 
