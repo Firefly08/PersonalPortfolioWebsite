@@ -206,6 +206,7 @@ nav img {
 .skill__name {
     font-size: 3rem;
     margin-bottom: 3rem;
+    color: var(--color-orange);
 }
 
 .skill:not(:last-child) {
@@ -307,7 +308,6 @@ p {
 .portfolio__container {
     display: flex;
     flex-direction: row;
-    padding: 0 7%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -399,7 +399,7 @@ p {
 .contact__map {
     overflow: hidden;
     background: none !important;
-    height: 550px;
+    height: 530px;
     width: 550px;
 }
 
@@ -595,10 +595,16 @@ footer {
     transition: width .6s ease;
 }
 
+@media only screen and (max-width: 1200px) {
+    .portfolio__container {
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .banner__content {
         width: 100%;
-        padding-top: 5rem;
+        padding-top: 25rem;
     }
 
     .skills__container {
@@ -621,6 +627,10 @@ footer {
         flex: 0 1 350%;
     }
 
+    .resume__profile {
+        margin: 0 0 50px 0;
+    }
+
     .resume__member {
         min-height: 55rem;
         flex: 0 0 30rem;
@@ -634,9 +644,10 @@ footer {
     }
 
     .portfolio__picture {
-        flex: 0 1 30%;
+        flex: 0 1 42%;
         margin-bottom: 20px;
     }
+
     .contact__about {
         padding: 2%;
         height: 100%;
@@ -652,7 +663,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .banner__content {
         width: 100%;
-        padding-top: 3rem;
+        padding-top: 25rem;
     }
 
     .heading__description {
@@ -696,7 +707,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 460px) {
+    .banner__content {
+        padding-top: 25rem !important;
+    }
+
     #banner h1 {
         line-height: 1;
     }
@@ -709,8 +724,34 @@ footer {
         flex: 0 1 85%;
     }
 
+    .contact__map {
+        height: 400px;
+        width: 400px;
+    }
+
+    .row p {
+        margin: 1rem 4rem;
+        text-align: center;
+    }
+
+    .social-link {
+        margin-top: 3%;
+    }
+
     #resume {
         padding-top: 0;
+    }
+
+    .title {
+        padding: 2rem 3rem;
+    }
+
+    .resume__profile {
+        margin: 0 20px 30px 20px;
+    }
+
+    .resume__profile p {
+        padding: 3px 5%;
     }
 
     .resume__member {
@@ -747,7 +788,7 @@ footer {
     }
 
     .main-nav li a {
-        padding: 1.8rem 1.4rem;
+        padding: 15px 5px;
     }
 
     .form__row {
@@ -779,5 +820,19 @@ footer {
         text-align: center;
         word-spacing: 5px;
         font-weight: bold;
+    }
+
+    #more1,
+    #more2,
+    #more3,
+    #more4,
+    #more5,
+    #more6,
+    #more7,
+    #more8,
+    #more9,
+    #more10,
+    #more11 {
+        width: 96%;
     }
 }
