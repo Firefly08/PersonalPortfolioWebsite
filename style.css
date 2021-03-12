@@ -321,7 +321,7 @@ p {
 }
 
 .portfolio__picture:hover .portfolio__img {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 1;
     transition: all .3s ease-in-out;
     box-shadow: 3px 3px 10px black;
@@ -337,7 +337,7 @@ p {
 }
 
 .read_more:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .read_more h3 {
@@ -346,7 +346,10 @@ p {
     vertical-align: middle;
     line-height: 100%;
     background-color: var(--color-white);
-    padding: 10px;
+    padding: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .read_more {
@@ -365,7 +368,7 @@ p {
     line-height: 200px;
 }
 
-#myDIV {
+#more {
     width: 100%;
     padding: 50px 0;
     text-align: center;
@@ -389,8 +392,8 @@ p {
 .contact__map {
     overflow: hidden;
     background: none !important;
-    height: 450px;
-    width: 100%;
+    height: 550px;
+    width: 550px;
 }
 
 .form__row {
@@ -482,7 +485,6 @@ p {
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0 3%;
 }
 
 .center {

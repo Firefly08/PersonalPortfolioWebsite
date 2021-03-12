@@ -1,5 +1,5 @@
 function readmore() {
-    var x = document.getElementById("myDIV");
+    var x = document.getElementById("more");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
