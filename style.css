@@ -282,7 +282,7 @@ p {
 }
 
 .resume__skills {
-    padding: 3%;
+    padding: 2% 3%;
     height: 390px;
     width: 100%;
     margin-bottom: 20px;
@@ -313,8 +313,8 @@ p {
 }
 
 .portfolio__picture {
-    flex: 0 1 30%;
-    width: 30%;
+    flex: 0 1 42%;
+    width: 42%;
     position: relative;
     margin: 1.5% 1.5%;
     box-shadow: 3px 3px 10px black;
@@ -343,7 +343,7 @@ p {
 .read_more h3 {
     color: var(--color-secondary);
     display: inline-table;
-    vertical-align: middle;
+    vertical-align: bottom;
     line-height: 100%;
     background-color: var(--color-white);
     padding: 50px;
@@ -368,13 +368,20 @@ p {
     line-height: 200px;
 }
 
-#more {
-    width: 100%;
+#more1, #more2, #more3, #more4, #more5, #more6,
+#more7,
+#more8,
+#more9,
+#more10,
+#more11 {
+    width: 87%;
     padding: 50px 0;
     text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
     display: block;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px black;
 }
 
 #contact {
@@ -505,7 +512,6 @@ p {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border: 1px solid currentColor;
     border-radius: .6rem;
     transition: all .3s ease-in-out;
 }
@@ -515,7 +521,7 @@ p {
 }
 
 .social-link li:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 footer {
@@ -551,7 +557,6 @@ footer {
 .progress-percent-small {
     display: block;
     float: right;
-    padding-right: 80px;
 }
 
 .tm-progress {
