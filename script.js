@@ -1,10 +1,8 @@
-    // Add active class to the current link (highlight it)
-    var header = document.getElementById("menu");
-var links = header.getElementsByClassName("menu-link");
-for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
+function readmore() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }

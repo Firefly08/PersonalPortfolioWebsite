@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Head END -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Home Page</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Quattrocento+Sans:wght@400;700"
-        rel="stylesheet"
-        type="text/css" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <script src="https://kit.fontawesome.com/dc4cfd0094.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+
 </head>
+<!-- Head END -->
+
+<!-- Body START -->
 <body>
+    <!-- Header START -->
     <header id="home">
         <nav class="main-nav">
             <div class="main-nav__container">
@@ -26,8 +29,12 @@
             </div>
         </nav>
     </header>
+    <!-- Header END -->
 
+    <!-- Main START -->
     <main>
+
+        <!-- Banner START -->
         <section id="banner">
             <div class="container">
                 <div class="banner__content">
@@ -39,7 +46,9 @@
                 </div>
             </div>
         </section>
+        <!-- Banner END -->
 
+        <!-- Skills START -->
         <section id="skills">
             <div class="container">
                 <div class="heading">
@@ -82,7 +91,9 @@
                 </div>
             </div>
         </section>
+        <!-- Skills END -->
 
+        <!-- Portfolio START -->
         <section id="portfolio">
             <div class="heading">
                 <div class="container">
@@ -91,83 +102,91 @@
             </div>
             <div class="portfolio__container">
                 <figure class="portfolio__picture">
-                    <img src="./img/tuning-01.jpg" alt="portfolio Picture 1" class="portfolio__img">
+                    <img src="./img/01_MixedMessages.jpg" alt="portfolio Picture 1" class="portfolio__img">
+                    <div class="read_more">
+                        <h3 onclick="readmore()">Read more...</h3>
+                    </div>                    
+                </figure>
+                <div id="myDIV" style="display: none;">
+                    This is my DIV element.
+                </div>
+                <figure class="portfolio__picture">
+                    <img src="./img/02_MixedImages.jpg" alt="portfolio Picture 2" class="portfolio__img">
                 </figure>
                 <figure class="portfolio__picture">
-                    <img src="./img/tuning-02.jpg" alt="portfolio Picture 2" class="portfolio__img">
+                    <img src="./img/03_DasmotosArts.jpg" alt="portfolio Picture 3" class="portfolio__img">
                 </figure>
                 <figure class="portfolio__picture">
-                    <img src="./img/tuning-03.jpg" alt="portfolio Picture 3" class="portfolio__img">
-                </figure>
-                <figure class="portfolio__picture">
-                    <img src="./img/tuning-04.jpg" alt="portfolio Picture 4" class="portfolio__img">
+                    <img src="./img/04_CheatSheetStarting.jpg" alt="portfolio Picture 4" class="portfolio__img">
                 </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-05.jpg" alt="portfolio Picture 5" class="portfolio__img">
+                     <img src="./img/05_ExcursionProject.jpg" alt="portfolio Picture 5" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-06.jpg" alt="portfolio Picture 6" class="portfolio__img">
+                     <img src="./img/06_Fotomatic.jpg" alt="portfolio Picture 6" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-07.jpg" alt="portfolio Picture 7" class="portfolio__img">
+                     <img src="./img/07_WebsiteDesignSystem.jpg" alt="portfolio Picture 7" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-08.jpg" alt="portfolio Picture 8" class="portfolio__img">
+                     <img src="./img/08_TeaCozy.jpg" alt="portfolio Picture 8" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-09.jpg" alt="portfolio Picture 9" class="portfolio__img">
+                     <img src="./img/09_CompanyHomePage.jpg" alt="portfolio Picture 9" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-10.jpg" alt="portfolio Picture 10" class="portfolio__img">
+                     <img src="./img/10_ResponsiveClubWebsite.jpg" alt="portfolio Picture 10" class="portfolio__img">
                  </figure>
                  <figure class="portfolio__picture">
-                     <img src="./img/tuning-11.jpg" alt="portfolio Picture 11" class="portfolio__img">
-                 </figure>
-                 <figure class="portfolio__picture">
-                     <img src="./img/tuning-12.jpg" alt="portfolio Picture 12" class="portfolio__img">
+                     <img src="./img/11_PersonalPorfolioWebsite.jpg" alt="portfolio Picture 11" class="portfolio__img">
                  </figure>
             </div>
         </section>
+        <!-- Portfolio END -->
 
+        <!-- Resume START -->
         <section id="resume">
             <div class="container">
                 <div class="heading">
                     <h2 class="heading__title">My <span>resume</span></h2>
-                    <p class="heading__description">We don’t oﬀer perks to make people happy. Our work does that.</p>
                 </div>
 
                 <div class="resume__container">
-                    <div class="resume__member">
-                        <figure class="resume__photo">
-                            <img src="./img/resume-3.jpg" alt="Founder Working Yoga" class="resume__img">
-                        </figure>
-                        <div class="resume__detail">
-                            <h3 class="resume__name">Hugo Silva</h3>
-                            <p class="resume__role">C.E.O. - Founder and Principal Investor</p>
-                        </div>
+                    <div class="resume__profile raised">
+                        <h2 class="title"><span>Profile</span></h2>
+                        <p><span class="tm-info-label">Name</span> John White</p>
+                        <p><span class="tm-info-label">Birthday</span> December 24, 1996</p>
+                        <p><span class="tm-info-label">Address</span> Melbourne Victoria 3000 Australia</p>
+                        <p><span class="tm-info-label">Phone</span> +001 020 0340 | 009 080 0760</p>
+                        <p><span class="tm-info-label">Email</span> hello@company.com</p>
+                        <p><span class="tm-info-label">Website</span> <a href="#"
+                                class="tm-red-text">www.company.com</a></p>
                     </div>
-                    <div class="resume__member">
-                        <figure class="resume__photo">
-                            <img src="./img/resume-2.jpg" alt="Co-Founder working Yoga" class="resume__img">
-                        </figure>
-                        <div class="resume__detail">
-                            <h3 class="resume__name">Javier Bardem</h3>
-                            <p class="resume__role">Mechanic - Body Tuning</p>
+                    <div class="resume__skills raised">
+                        <h2 class="title">Some <span>Skills</span></h2>
+                        <h4 class="tm-progress-label">Bootstrap <small class="progress-percent-small">100%</small>
+                        </h4>
+                        <div class="progress tm-progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                         </div>
-                    </div>
-                    <div class="resume__member">
-                        <figure class="resume__photo">
-                            <img src="./img/resume-1.jpg" alt="Co-Founder working Yoga" class="resume__img">
-                        </figure>
-                        <div class="resume__detail">
-                            <h3 class="resume__name">John Doe</h3>
-                            <p class="resume__role">Mechanic - Audio Tuning</p>
+                        <h4 class="tm-progress-label">HTML5 <small class="progress-percent-small">90%</small></h4>
+                        <div class="progress tm-progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                         </div>
-                    </div>
+                        <h4 class="tm-progress-label">SEO <small class="progress-percent-small">80%</small></h4>
+                        <div class="progress tm-progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
-        
+        <!-- Resume END -->
+
+        <!-- Contact START -->
         <section id="contact">
             <div class="container">
                 <div class="heading">
@@ -231,8 +250,12 @@
                 </div>
             </div>
         </section>
-    </main>
+        <!-- Contact END -->
 
+    </main>
+    <!-- Main END -->
+
+    <!-- Footer START -->
     <footer>
         <div class="container">
             <div class="row">
@@ -250,5 +273,7 @@
             </div>
         </div>
     </footer>
+    <!-- Footer END -->
+
 </body>
 </html>
