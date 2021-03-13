@@ -63,7 +63,7 @@ header p {
         color: #ddd;
         text-decoration: none;
         padding: 1em;
-        font-weight: 400;
+        font-weight: 700;
 
         &:hover {
             background-color: #aaa;
@@ -71,6 +71,7 @@ header p {
 
         &.active {
             background-color: rgba(0, 0, 0, 0.1);
+            color: var(--color-orange);
         }
     }
 }
@@ -99,12 +100,13 @@ header p {
     padding: 1.8rem 2.4rem;
     transition: all .3s ease-in-out;
 }
-
+/*
 nav .main-nav ul li.active a {
     color: rgb(255, 0, 0);
 }
+*/
 
-.menu-link {
+.main-nav__link {
     border: none;
     outline: none;
     padding: 10px 16px;
@@ -113,9 +115,10 @@ nav .main-nav ul li.active a {
 }
 
 /* Style the active class (and buttons on mouse-over) */
+/*
 .active,
-.menu-link:hover {
-    background-color: #DFDFDF;
+.main-nav__link:hover {
+    background-color: #DFDFDF !important;
     color: var(--color-orange) !important;
 }
 
@@ -123,6 +126,7 @@ nav .main-nav ul li.active a {
     transform: scaleX(1);
     transform-origin: right bottom;
 }
+*/
 
 nav img {
     width: 100px;

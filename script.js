@@ -17,13 +17,6 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
-
-		// Show/hide menu on scroll
-		//if (scrollDistance >= 850) {
-		//		$('nav').fadeIn("fast");
-		//} else {
-		//		$('nav').fadeOut("fast");
-		//}
 	
 		// Assign active class to nav links while scolling
 		$('.page-section').each(function(i) {
