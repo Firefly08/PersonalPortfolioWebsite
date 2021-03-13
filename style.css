@@ -380,6 +380,11 @@ p {
     text-align: justify;
 }
 
+.aboutlinks {
+    margin-top: 6%;
+    padding-right: 25px;
+}
+
 .aboutp p {
     padding-bottom: 0;
 }
