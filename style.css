@@ -57,6 +57,22 @@ header p {
     text-align: right;
     flex-grow: 1;
     overflow: hidden;
+
+    &__link {
+        display: block;
+        color: #ddd;
+        text-decoration: none;
+        padding: 1em;
+        font-weight: 400;
+
+        &:hover {
+            background-color: #aaa;
+        }
+
+        &.active {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
 }
 
 .main-nav ul {
@@ -78,7 +94,7 @@ header p {
     display: block;
     overflow: hidden;
     position: relative;
-    color: var(--color-black);
+    color: var(--color-primary);
     text-decoration: none;
     padding: 1.8rem 2.4rem;
     transition: all .3s ease-in-out;
@@ -99,8 +115,8 @@ nav .main-nav ul li.active a {
 /* Style the active class (and buttons on mouse-over) */
 .active,
 .menu-link:hover {
-    background-color: #727272;
-    color: var(--color-white);
+    background-color: #DFDFDF;
+    color: var(--color-orange) !important;
 }
 
 .main-nav li a:hover::after {
