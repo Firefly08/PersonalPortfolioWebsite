@@ -28,7 +28,7 @@ function readmore3() {
 function readmore4() {
     var x = document.getElementById("more4");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -37,7 +37,7 @@ function readmore4() {
 function readmore5() {
     var x = document.getElementById("more5");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -46,7 +46,7 @@ function readmore5() {
 function readmore6() {
     var x = document.getElementById("more6");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -55,7 +55,7 @@ function readmore6() {
 function readmore7() {
     var x = document.getElementById("more7");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -64,7 +64,7 @@ function readmore7() {
 function readmore8() {
     var x = document.getElementById("more8");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -73,7 +73,7 @@ function readmore8() {
 function readmore9() {
     var x = document.getElementById("more9");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -82,7 +82,7 @@ function readmore9() {
 function readmore10() {
     var x = document.getElementById("more10");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
@@ -91,7 +91,7 @@ function readmore10() {
 function readmore11() {
     var x = document.getElementById("more11");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }

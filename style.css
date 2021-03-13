@@ -71,6 +71,7 @@ header p {
     position: relative;
     border: 1px solid black;
     background-color: rgb(255 255 255);
+    margin: 0 30px;
 }
 
 .main-nav li a {
@@ -86,20 +87,6 @@ header p {
 nav .main-nav ul li.active a {
     color: rgb(255, 0, 0);
 }
-/*
-.main-nav li a::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: left bottom;
-    transition: all .3s ease-in-out;
-    background-color: var(--color-white);
-}
-*/
 
 .menu-link {
     border: none;
@@ -112,8 +99,8 @@ nav .main-nav ul li.active a {
 /* Style the active class (and buttons on mouse-over) */
 .active,
 .menu-link:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #727272;
+    color: var(--color-white);
 }
 
 .main-nav li a:hover::after {
@@ -343,7 +330,7 @@ p {
 .read_more h3 {
     color: var(--color-secondary);
     display: inline-table;
-    vertical-align: bottom;
+    vertical-align: text-top;
     line-height: 100%;
     background-color: var(--color-white);
     padding: 50px;
@@ -382,13 +369,15 @@ p {
     box-shadow: 3px 3px 3px black;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-flow: wrap;
-    place-content: center;
+    place-content: space-between;
 }
 
 .aboutp {
-    padding: 4rem;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column;
+    width: 33%;
+    text-align: justify;
 }
 
 .aboutp p {
@@ -491,6 +480,10 @@ p {
     font-weight: bold;
 }
 
+.contactf label {
+    margin: 0 15px 0 5px;
+}
+
 .contact__about {
     padding: 2%;
     height: 590px;
@@ -500,6 +493,33 @@ p {
     text-align: center;
     word-spacing: 5px;
     font-weight: bold;
+}
+
+input#name-input {
+    width: 70%;
+    height: 30px;
+}
+
+input#phone-input {
+    width: 70%;
+    height: 30px;
+}
+
+input#email-input {
+    width: 70%;
+    height: 30px;
+}
+
+input[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    background-color: #eb5424;
+    color: white;
 }
 
 .mapouter {
@@ -614,6 +634,10 @@ footer {
     .portfolio__container {
         padding: 0;
     }
+
+    .main-nav li {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -673,6 +697,10 @@ footer {
         word-spacing: 5px;
         font-weight: bold;
     }
+
+    .main-nav li {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -719,6 +747,10 @@ footer {
     
     nav img {
         display: none;
+    }
+
+    .main-nav li {
+        margin: 0;
     }
 }
 
@@ -803,7 +835,12 @@ footer {
     }
 
     .main-nav li a {
-        padding: 15px 0;
+        padding: 15px 5px;
+        font-size: 1.35rem;
+    }
+
+    .main-nav li {
+        margin: 0;
     }
 
     .form__row {
@@ -815,7 +852,11 @@ footer {
     }
 
     .contactf {
-        wodth: 80%;
+        padding: 20px 0;
+    }
+
+    .contactf label {
+        margin: 0 5px 0 2px;
     }
 
     .contact__form input {
@@ -849,5 +890,14 @@ footer {
     #more10,
     #more11 {
         width: 96%;
+        flex-direction: column;
+    }
+
+    .read_more h3 {
+        vertical-align: baseline;
+    }
+
+    .aboutp {
+        width: 100%;
     }
 }
